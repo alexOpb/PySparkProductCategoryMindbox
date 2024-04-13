@@ -21,11 +21,11 @@
 +--------------+--------+
 |          name|category|
 +--------------+--------+
-|  product_ab_1|       A|
-|  product_ab_1|       B|
 |product_null_3|    null|
+|  product_ab_1|       A|
 |  product_ac_2|       A|
 |  product_ac_2|       C|
+|  product_ab_1|       B|
 +--------------+--------+
 ```
 
@@ -46,10 +46,19 @@ Dataframe: categories:
 | id|category|
 +---+--------+
 |  1|       A|
-|  1|       B|
-|  2|       A|
-|  2|       C|
+|  2|       B|
+|  3|       C|
 +---+--------+
 ```
-
+Dataframe: product_categories:
+```
++----------+-----------+
+|product_id|category_id|
++----------+-----------+
+|         1|          1|
+|         1|          2|
+|         2|          1|
+|         2|          3|
++----------+-----------+
+```
 
